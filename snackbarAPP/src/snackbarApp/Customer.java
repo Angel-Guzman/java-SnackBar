@@ -34,9 +34,12 @@ public class Customer
 	}
 	// Other Methods
 	//
-
+	public void addCash(double cash)
+	{
+		this.cash += cash;
+	}
 	public void buySnack(double cost)
 	{
-		cash -= cost; 
+		this.cash -= cost; 
 	}
 }

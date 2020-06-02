@@ -4,7 +4,9 @@ public class Main
 {
 	private static void workWithData()
 	{
+		System.out.println();
 		System.out.println("snackbar is open");
+		System.out.println();
 
 		Customer c1 = new Customer("Jane", 45.25);
 		Customer c2 = new Customer("Bob", 33.14);
@@ -23,16 +25,35 @@ public class Main
 		c1.buySnack(s4.getTotalCost(3));
 		System.out.println("Jane's cash on hand $" + c1.getCash());
 		System.out.println("Quantity of snack 4 (soda) is " + s4.getQuantity());
+		System.out.println();
 
 		c1.buySnack(s3.getTotalCost(1));
 		System.out.println("Jane's cash on hand $" + c1.getCash());
-		System.out.println("Quantity of snack 3 (pretzel) is " + s4.getQuantity());
+		System.out.println("Quantity of snack 3 (pretzel) is " + s3.getQuantity());
+		System.out.println();
 
 		c2.buySnack(s4.getTotalCost(2));
 		System.out.println("Bob's cash on hand $" + c2.getCash());
 		System.out.println("Quantity of snack 4 (soda) is " + s4.getQuantity());
+		System.out.println();
 
+		c1.addCash(10);
+		System.out.println("Jane's cash on hand $" + c1.getCash());
+		System.out.println();
 
+		c1.buySnack(s2.getTotalCost(1));
+		System.out.println("Jane's cash on hand $" + c1.getCash());
+		System.out.println("Quantity of snack 2 (chocolate) is " + s2.getQuantity());
+		System.out.println();
+
+		s3.addQuantity(12);
+		System.out.println("Quantity of snack 3 (pretzel) is " + s3.getQuantity());
+		System.out.println();
+
+		c2.buySnack(s3.getTotalCost(3));
+		System.out.println("Bob's cash on hand $" + c2.getCash());
+		System.out.println("Quantity of snack 3 (pretzel) is " + s3.getQuantity());
+		System.out.println();
 
 	}
 
