@@ -23,16 +23,19 @@ public class Main
 		Snack s5 = new Snack("water", 20, 2.75, m2.getId());
 		
 		c1.buySnack(s4.getTotalCost(3));
+		s4.buySnack(3);
 		System.out.println("Jane's cash on hand $" + c1.getCash());
 		System.out.println("Quantity of snack 4 (soda) is " + s4.getQuantity());
 		System.out.println();
 
 		c1.buySnack(s3.getTotalCost(1));
+		s3.buySnack(1);
 		System.out.println("Jane's cash on hand $" + c1.getCash());
 		System.out.println("Quantity of snack 3 (pretzel) is " + s3.getQuantity());
 		System.out.println();
 
 		c2.buySnack(s4.getTotalCost(2));
+		s4.buySnack(2);
 		System.out.println("Bob's cash on hand $" + c2.getCash());
 		System.out.println("Quantity of snack 4 (soda) is " + s4.getQuantity());
 		System.out.println();
@@ -42,6 +45,7 @@ public class Main
 		System.out.println();
 
 		c1.buySnack(s2.getTotalCost(1));
+		s2.buySnack(1);
 		System.out.println("Jane's cash on hand $" + c1.getCash());
 		System.out.println("Quantity of snack 2 (chocolate) is " + s2.getQuantity());
 		System.out.println();
@@ -51,6 +55,7 @@ public class Main
 		System.out.println();
 
 		c2.buySnack(s3.getTotalCost(3));
+		s3.buySnack(3);
 		System.out.println("Bob's cash on hand $" + c2.getCash());
 		System.out.println("Quantity of snack 3 (pretzel) is " + s3.getQuantity());
 		System.out.println();
