@@ -7,7 +7,7 @@ public class Customer
 	private String name;
 	private double cash;
 
-	public Customer(String name, int id, double cash)
+	public Customer(String name, double cash)
 	{
 		maxId++;
 		id = maxId;
@@ -23,7 +23,7 @@ public class Customer
 	{
 		return name;
 	}
-	public double getCash();
+	public double getCash()
 	{
 		return cash;
 	}
@@ -31,5 +31,12 @@ public class Customer
 	public void setName(String name)
 	{
 		this.name = name;
+	}
+	// Other Methods
+	//
+
+	public void buySnack(double cost)
+	{
+		cash -= cost; 
 	}
 }
